@@ -1,0 +1,211 @@
+body {
+  font-family: "Montserrat";
+  font-weight: 500;
+  text-align: center;
+  color: #1b262c;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Anton";
+  font-size: 1.7rem;
+  color: #1b262c;
+}
+
+ul {
+  list-style: none;
+  padding-inline-start: 0;
+}
+
+li {
+  padding-top: 5px;
+}
+
+hr {
+  border: dotted 6px;
+  border-bottom: none;
+  width: 4%;
+  margin: auto;
+}
+
+/* Headings */
+
+.big-heading {
+  font-family: "Anton";
+  font-size: 4rem;
+}
+
+.name-heading {
+  font-family: "Sacramento", cursive;
+  font-size: 4rem;
+  font-weight: bold;
+  line-height: 1.5;
+  color: #1b262c;
+}
+
+.section-heading {
+  font-size: 2.5rem;
+  padding-top: 5%;
+  line-height: 1.5;
+}
+
+/* Sections */
+
+.colored-section {
+  background-color: #0f4c75;
+  color: #bbe1fa;
+}
+
+.white-section {
+  background-color: #bbe1fa;
+}
+
+/* Containers */
+
+.container-fluid {
+  padding: 7% 15%;
+}
+
+/* Navigation bar */
+
+.navbar {
+  padding: 0 0 4.5rem;
+}
+
+.navbar-brand {
+  font-family: "Ubuntu";
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #1b262c;
+}
+
+.nav-link {
+  font-weight: 300;
+  font-size: 1.2rem;
+  color: #1b262c;
+}
+
+/* Title Section */
+
+#title .container-fluid {
+  padding: 3% 15% 10%;
+}
+
+.asgardian {
+  width: 30%;
+  padding-top: 5%;
+  margin: auto;
+}
+
+@media (max-width: 940px) {
+  .big-heading {
+    font-size: 2rem;
+  }
+
+  .asgardian {
+    width: 40%;
+  }
+}
+
+/* About Section */
+#About .container-fluid {
+  padding: 7% 15% 15%;
+}
+
+.about-text {
+  font-size: 1.2rem;
+}
+
+@media (max-width: 940px) {
+  .name-heading {
+    font-size: 2.5rem;
+  }
+}
+
+/* What I Can Do Section */
+
+#what-I-can-do .container-fluid {
+  padding: 7% 5%;
+}
+
+.wicd {
+  margin-top: -18%;
+}
+
+.card-img-top {
+  width: 25%;
+  padding: 3%;
+  margin: auto;
+}
+
+.card {
+  padding: 3%;
+}
+
+.left-card {
+  border-radius: 3% 0 0 3%;
+}
+
+.right-card {
+  border-radius: 0 3% 3% 0;
+  margin-left: -1px;
+}
+
+.list-tittle {
+  margin-top: 3rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 940px) {
+  .left-card {
+    border-radius: 3% 3% 0 0;
+  }
+
+  .right-card {
+    border-radius: 0 0 3% 3%;
+    margin-top: -1px;
+  }
+}
+
+/* Education & Skills Section */
+
+.list-title {
+  font-family: "Ubuntu";
+  font-weight: 500;
+  font-size: 1.7rem;
+  padding: 5% 0 3%;
+}
+
+/* Contact Me Section */
+
+.btn {
+  margin-top: 10%;
+  background-color: #0f4c75;
+}
+
+.btn:hover {
+  background-color: #1b262c;
+}
+
+/* Footer Section */
+
+#footer {
+  padding: 7% 15%;
+}
+
+.icon {
+  padding: 20px;
+}
+
+a {
+  color: #bbe1fa;
+}
+
+a:hover {
+  color: #1b262c;
+}
