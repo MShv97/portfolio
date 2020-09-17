@@ -54,7 +54,7 @@ hr {
 /* Sections */
 
 .colored-section {
-  color: #bbe1fa;
+  color: #fff;
 }
 
 .white-section {
@@ -157,7 +157,7 @@ hr {
   font-weight: 700;
 }
 
-.list-tittle {
+.list-title {
   margin-top: 3rem;
   font-weight: 600;
   font-size: 1.2rem;
@@ -177,7 +177,7 @@ hr {
 
 /* Education & Skills Section */
 
-.list-title {
+.skill-title {
   font-weight: 500;
   font-size: 1.7rem;
   padding: 5% 0 3%;
@@ -205,9 +205,9 @@ hr {
 }
 
 a {
-  color: #bbe1fa;
+  color: #fff;
 }
 
 a:hover {
-  color: #1b262c;
+  color: #bbe1fa;
 }
