@@ -31,7 +31,23 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
         integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
+        integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 </head>
+
+<script>
+    function printExperience(startDate) {
+        if (!startDate) return document.write("Only self projects")
+
+        const years = moment().diff(startDate, "y")
+        const months = Math.ceil(moment().diff(startDate, "month") / 12)
+        const yearUnit = years > 1 ? "years" : "year"
+        const monthUnit = months > 1 ? "months" : "month"
+        document.write(`${years} ${yearUnit}, ${months} ${monthUnit}`)
+    }
+</script>
 
 <body>
 
@@ -57,7 +73,8 @@
                             <a class="nav-link" href="work.html">Work</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="CV Mohammad Shehab.pdf">Download-CV</a>
+                            <a class="nav-link"
+                                href="https://drive.google.com/drive/folders/1pnmI7NOViEDPjte4g6tAPLgo_54lbBBF">Download-CV</a>
                         </li>
 
                     </ul>
@@ -68,7 +85,7 @@
 
                 <div class="row">
                     <div class="col-12">
-                        <h1 class="big-heading">Web & Mobile App Developer</h1>
+                        <h1 class="big-heading">Web Apps Developer</h1>
                     </div>
                     <div class="col-12">
                         <img class="asgardian" src="images/Asgardians.png" alt="Asgardians logo">
@@ -97,37 +114,42 @@
         <div class="container-fluid">
             <div class="row justify-content-center wicd">
                 <div class="card col-lg-4 left-card ">
-                    <img class="card-img-top" src="images/app.svg" alt="mobile app icon">
+
+                    <img class="card-img-top" src="images/frontend.png" alt="frontend icon">
                     <div class="card-body">
-                        <h5 class="card-title">Develop Mobile Apps</h5>
-                        <p class="card-text">I can build mobile apps that work on both Android and iOS.</p>
+                        <h5 class="card-title">Frontend</h5>
+                        <p class="card-text">I can create your websites to run across variety of devices.</p>
                         <p class="list-title">
                             Languages
                         </p>
-                        <p>Dart</p>
+                        <p>HTML,CSS,JS</p>
 
                         <p class="list-title">Dev Tools</p>
                         <ul>
-                            <li>Android Studio</li>
-                            <li>Flutter</li>
-                            <li>Firebase</li>
+                            <li>VS Code</li>
+                            <li>React.js</li>
+                            <li>Material-UI</li>
                         </ul>
 
+                        <p class="list-title">
+                            Experience
+                        </p>
+                        <script>printExperience() </script>
 
                     </div>
                 </div>
                 <div class="card col-lg-4 right-card">
-                    <img class="card-img-top" src="images/web.svg" alt="website icon">
+                    <img class="card-img-top" src="images/backend.png" alt="backend icon">
                     <div class="card-body">
-                        <h5 class="card-title">Develop Websites</h5>
-                        <p class="card-text">I can create your websites to run across variety of devices.</p>
+                        <h5 class="card-title">Backend</h5>
+                        <p class="card-text">I can create stable and scalable REST APIs to serve your websites.</p>
 
 
                         <p class="list-title">
                             Languages
                         </p>
 
-                        <p>HTML,CSS,JS</p>
+                        <p>JavaScript</p>
 
                         <p class="list-title">Dev Tools</p>
                         <ul>
@@ -136,11 +158,12 @@
                             <li>Express.js</li>
                             <li>MongoDB</li>
                             <li>SQL</li>
-                            <li>Bootstrap</li>
-                            <li>React.js</li>
-                            <li>git</li>
                         </ul>
 
+                        <p class="list-title">
+                            Experience
+                        </p>
+                        <script>printExperience("2020-10-10") </script>
 
                     </div>
                 </div>
@@ -205,12 +228,16 @@
 
     <!-- Footer -->
 
+
     <footer id="footer" class="colored-section">
+
         <a class="icon fab fa-linkedin" href="https://www.linkedin.com/in/mshv97/"></a>
         <a class="icon footer-icon fab fa-facebook-f" href="https://Facebook.com/mshv97"></a>
         <a class="icon footer-icon fas fa-envelope" href="mailto:mshv97@gmail.com"></a>
         <p class="icon copyright">©
-            <script>document.write(new Date().getFullYear())</script> Mohammad Shehab.</p>
+            <script>document.write(new Date().getFullYear())</script> Mohammad Shehab.
+        </p>
+
     </footer>
 
 
