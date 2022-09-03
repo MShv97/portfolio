@@ -41,11 +41,12 @@
     function printExperience(startDate) {
         if (!startDate) return document.write("Only self projects")
 
-        const years = moment().diff(startDate, "y")
-        const months = Math.ceil(moment().diff(startDate, "month") / 12)
+        const months = moment().diff(startDate, "months");
+        const years = parseInt(months / 12);
         const yearUnit = years > 1 ? "years" : "year"
-        const monthUnit = months > 1 ? "months" : "month"
-        document.write(`${years} ${yearUnit}, ${months} ${monthUnit}`)
+        const monthUnit = months % 12 > 1 ? "months" : "month"
+        
+        document.write(`${years} ${yearUnit}, ${months%12} ${monthUnit}`)
     }
 </script>
 
@@ -163,7 +164,7 @@
                         <p class="list-title">
                             Experience
                         </p>
-                        <script>printExperience("2020-10-10") </script>
+                        <script>printExperience("2020-10-01") </script>
 
                     </div>
                 </div>
